@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Random Quote</title>
+  </head>
+  <body>
+    <section class="qoute">
+      <h1>Quote of the Day</h1>
+      <p>
+        <span id="typed3"></span>
+
+        <script>
+          var typed3 = new Typed("#typed3", {
+            strings: [
+              "Press the button below to recieve a <strong>random quote!</strong> ",
+            ],
+
+            typeSpeed: 20,
+            backSpeed: 20,
+            smartBackspace: true,
+            loop: true,
+          });
+        </script>
+      </p>
+      <div class="button-style">
+        <button onclick="showRandomQuote()">Get Random Quote</button>
+      </div>
+      <div id="quote-box">
+        <p id="quote"></p>
+        <p id="author"></p>
+      </div>
+    </section>
+
+    <script src="js/qoute.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+*{
+     margin: 0;
+     padding: 0;
+     color: white;
+      font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color:  #F0F4F8;
+}
+.qoute{
+    height: 100vh;
+    width: 100%;
+
+    text-align: center;
+     background-image: url(/linus-nylund-UCIZh0-OYPw-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+h1{
+  
+    font-size: 80px;
+    font-weight: 700;
+   padding-top: 30px;
+}
+p{
+    font-size: 45px;
+    margin-top: 30px;
+}
+button{
+    background-color: white;
+    position: relative;
+    padding: 20px 20px;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    transition: 1s all;
+    color: #8CB7AE;
+    z-index: 100;
+    margin-top: 30px;
+}
+
+button:hover{
+    color: white;
+}
+button::after{
+    position: absolute;
+    content:"" ;
+left: 0;
+top: 0;
+background-color: #8CB7AE;
+width: 0%;
+height: 100%;
+
+transition: 1s all;
+z-index: -1;
+
+}
+button:hover::after{
+
+width: 100%;
+}
